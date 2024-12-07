@@ -1,11 +1,15 @@
-"use client"
 
-import './styles.scss'
+
+import './App.css'
 
 import Highlight from '@tiptap/extension-highlight'
 import Typography from '@tiptap/extension-typography'
 import { EditorContent, useEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Editor from "./pages/editor";
+
 import React from 'react'
 
 export default () => {
@@ -35,6 +39,13 @@ export default () => {
   })
 
   return (
-    <EditorContent editor={editor} />
+    <>
+      <EditorContent editor={editor} />
+      <Router>
+        <Routes>
+          <Route path="/editor" element={<Editor />} />
+        </Routes>
+      </Router>
+    </>
   )
 }

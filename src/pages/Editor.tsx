@@ -1,4 +1,4 @@
-import '../App.css'
+import './editor.css'
 
 import Highlight from '@tiptap/extension-highlight'
 import Typography from '@tiptap/extension-typography'

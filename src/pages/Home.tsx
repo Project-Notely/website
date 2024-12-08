@@ -1,11 +1,11 @@
-"use client"
 
-import './styles.scss'
+import './editor.css'
 
 import Highlight from '@tiptap/extension-highlight'
 import Typography from '@tiptap/extension-typography'
 import { EditorContent, useEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
+
 import React from 'react'
 
 export default () => {
